@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Membuat Transisi</title>
+    <style>
+    body{
+      width: 500px;
+    }
+    /* scale(angka), scaleX-Y(angka)
+    rotate(deg), rotateX-Y(deg)
+    skew(deg), skewX-Y(deg)
+    translate (px), translate X-Y(px)
+    */
+    
+    .konten{
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      text-shadow: 0 5px 1px rgba(6,0,0,.7);
+      background-color: lightblue;
+      margin:50px auto 0;
+      transition:  1s 300ms;
+    }
+    .konten:hover{
+      transform: scale(1) rotate(360deg) translate(-100px);
+      background:rgba(0,0,0,.5);
+      color: #eaeaea;
+      font-weight:1000;
+    }
+    
+    .kotak{
+      height: 100px;
+      width: 100px;
+      background: yellow;
+      text-align: center;
+      line-height: 100px;
+      margin-top: 20px;
+      transition: 1500ms 300ms ease-in-out;
+    }
+    .kotak:hover{
+      transform: translate(200px);
+    }
+    
+    
+    </style>
+</head>
+
+<body>
+  <div class="konten">transform</div>
+  <div class="kotak">Kuning</div>
+   <p>Tranform adalah proferti yang memungkinkan kita dapat memanipulasi format visual dari elemen HTML seperti:
+    <ul>
+      <li>schale</li>
+      <li>skew</li>
+      <li>rotate</li>
+      <li>translate</li>
+    </ul>
+   </p>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssresset.css" type="text/css" media="all" />
+    <title>Css Resset</title>
+    
+    <style>
+    body{
+      font:14px/18px arial, serif;
+      background-color: #eaeaea;
+      height: 1000px;
+    }
+      
+      .top-bar{
+        height: 50px;
+        background-color: greenyellow;
+        position: fixed;
+        text-align: center;
+        line-height: 100px;
+        text-decoration: underline;
+        font-weight: bold;
+        top: 0;
+        right: 0;
+        left: 0;
+        color:gray;
+        opacity: 0.3;
+        z-index: 9;
+        display: inline-block;
+      }
+      
+      .content{
+        margin-top: 50px;
+        border:2px solid red;
+      }
+      .content a{
+        font-size: 10px;
+        text-decoration: none;
+        background:skyblue;
+        text-align: center;
+        margin-top:2px;
+        padding:2px;
+        border-radius: 5px;
+       font-weight: bold;
+      }
+      .content a:hover{
+        color:white;
+        background: black;
+        
+      }
+      
+      .text{
+        background: dimgrey;
+        font:30px/20px arial;
+        padding: 20px;
+        margin:20px auto;
+      }
+      .text h1{
+        text-align: center;
+        font-weight: 1000;
+        color: white;
+      text-shadow:0 0 3px dimgray, 5px 5px 5px darkgrey,10px 10px 5px black;
+      }
+      .gradien{
+        width: 300px;
+        margin: 25px auto;
+        height: 150px;
+        background-image:linear-gradient(to bottom, red 75px, white 75px);
+        box-shadow: 5px 5px 10px 5px rgba(0,0,0, .5)
+      }
+      .gradien h1{
+        text-align: center;
+        line-height: 150px;
+        font-size:30px;
+        font-weight: 1000;
+        text-transform: uppercase;
+        font-family: 'times new roman', sans-serif;
+      }
+   
+      .radial-gradient{
+        width: 300px;
+        height: 150px;
+        margin: 20px auto;
+        background-image:radial-gradient(ellipse closest-corner, white 10px, black 100px, blue 150px);
+      }
+      
+    </style>
+</head>
+<body>
+  
+  <div class="top-bar"><p><i>SaefulFvF</i></p></div>
+  <div class="content">
+   
+  <h1>Ini sebuah WEBSITE sederhana milik saya</h1>
+  <p>terdapat banyak sekali Paragraph dan yng lainnya yang serignsaya gunakan dalam membuat website</p>
+  
+  <h2>Navigasi</h2>
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+  </ul>
+  </div>
+  <div class="text">
+    <h1>TEXT SHADOWS</h1>
+  </div>
+  <div class="gradien"><h1>Indonesia</h1></div>
+  <div class="radial-gradient"></div>
+  
+</body>
+
+</html>

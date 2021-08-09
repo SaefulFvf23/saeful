@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wahyu</title>
+    <link rel="stylesheet" href="cssresset.css" type="text/css" media="all" />
+    <style>
+    body{
+      height: 800px;
+    }
+      .wa{
+        width: 300px;
+        height: 125px;
+        border:5px solid red;
+        margin:50px auto;
+        text-align: center;
+        line-height: 125px;
+        border-radius: 25px;
+        background: url(image/wa.jpg);
+        background-repeat:
+        }
+      
+      h1{
+        font-family: 'times new roman', serif;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow:2px 5px 5px red;
+        color:white;
+      }
+      .cek{
+        height: 5px;
+        width: 100px;
+        background: rgba(0,0,0,.5);
+        margin: -70px auto;
+        box-shadow: 0 5px 5px 2px black;
+      }
+      
+     .container{
+       width: 300px;
+       height: 50px;
+       border:2px solid black;
+       margin: 100px auto 0;
+       transition :border-radius 1.5s 2s ease-out ;
+     }
+     
+     .kotak{
+       height: 50px;
+       width: 50px;
+       background-color: royalblue;
+       transition: transform 1s, margin-left 3s 1s, border-radius 2s 2s, background 2s 1.5s ease-out;
+     }
+     
+     .container:hover .kotak{
+       transform: scale(1) translateX(-50px);
+       margin-left: 300px;
+       background: greenyellow;
+       border-radius: 50%;
+       
+     }
+     .container:hover{
+       border-radius:0 25px 25px 0;
+     }
+    
+     
+     .animasi{
+       width:300px;
+       border:2px solid black;
+       margin: 0 auto 50px;
+     }
+    .kotak-an{
+      width: 50px;
+      height:50px;
+      margin:auto;
+      background: salmon;
+      animation:animasikotak 2s ease 3 forwards alternate ;
+    }
+     /* Aminasi */
+     @keyframes animasikotak{
+       0%{
+         margin:auto;
+       }
+       50%{
+         transform: scale(.5) rotate(180deg);
+       }
+       100%{
+         transform: scale(1) rotate(-180deg);
+       }
+     }
+     
+    .kotak-an2{
+      width:50px;
+      height: 50px;
+      background-color:rgba(0,0,0,.7);
+      animation: animasikotak2 2s 1s alternate-reverse infinite;
+    }
+    @keyframes animasikotak2{
+      0%{
+        margin-left: 250px;
+      }
+      50%{
+        background-color: black;
+      }
+      100%{
+        opacity: .2;
+      }
+    }
+    
+    .kotak-an3{
+      border-radius: 25px;
+      width:50px;
+      height:50px;
+      background:tomato;
+      position: fixed;
+      top:0;
+      left: 0;
+      animation: animasikotak3 1.5s 300ms ease infinite alternate;
+    }
+  @keyframes animasikotak3{
+    0%{
+      margin-left:250;
+    }
+    50%{
+      opacity: .5;
+    }
+    100%{
+      transform:translate(300px);
+    }
+  }
+      
+    </style>
+</head>
+
+<body>
+  <div class="wa">
+    <h1>Wahyu Kontol:v</h1>
+  </div>
+  <div class="cek"></div>
+  
+  <div class="container">
+    <div class="kotak"></div>
+  </div>
+  <br />
+  <div class="animasi">
+    <div class="kotak-an"></div>
+    <div class="kotak-an2"></div>
+    <div class="kotak-an3"></div>
+  </div>
+</body>
+
+</html>

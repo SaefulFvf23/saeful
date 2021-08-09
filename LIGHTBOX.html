@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LIGHTBOX</title>
+    <link rel="stylesheet" href="cssresset.css" type="text/css" media="all" />
+    <style>
+      body{
+        font: 18px/36px 'times new roman', sans-serif;
+        background-color:#ddd;
+      }
+      h1{
+        font-size:35px;
+        margin: 20px auto;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 2px 2px white;
+      }
+      .container{
+        width:600px;
+        background:#fff;
+        margin: auto;
+        padding:20px;
+        box-shadow: 0 0 3px 3px rgba(0,0,0,.3);
+        border-radius: 5px;
+        
+      }
+      
+      .galery li{
+        width:120px;
+        height:120px;
+        border-radius: 50%;
+        text-align: center;
+        border:5px solid #666;
+        margin-right: 10px;
+        float: left;
+        position:relative;
+      }
+ 
+      .galery li img, .galery li a{
+        border-radius:50%;
+      }
+      
+      .galery li span{
+        display: block;
+        border-radius:50%;
+        height: 120px;
+        line-height: 120px;
+        width:120px;
+        background:rgba(200,200,200,.5);
+        position:absolute;
+        top:0;
+        text-decoration:none;
+        color:#333;
+        text-shadow:1px 1px 2px #ddd;
+        opacity:0;
+        transition: 300ms;
+        transform: rotate(0) scale(0);
+      }
+      .galery li a:hover span{
+        opacity:1;
+        border-radius:50%;
+        transform:scale(1) rotate(360deg);
+      }
+    </style>
+  </head>
+
+<body>
+  <h1>Amelia Supriyatna</h1>
+  
+  <div class="container">
+    
+    <ul class="galery cf">
+      <li>
+        <a href="#">
+          <img src="image/Tumb/1.png" alt="gambar 1">
+         <span>Amelia</span>
+       </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="image/Tumb/2.jpg" alt="gambar 2">
+         <span>Amelia</span>
+       </a>
+      </li>
+    </ul>
+    
+  </div>
+</body>
+
+</html>

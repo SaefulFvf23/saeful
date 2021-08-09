@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Calculator</title>
+    <style type="text/css" media="all">
+      *{
+        box-sizing: border-box;
+        font-family: "times new roman"
+      }
+      .container{
+        width:800px;
+        border:2px solid black;
+        margin:0 auto;
+      }
+      
+      .flex-column{
+        display:flex;
+        flex-direction: column
+      }
+      
+      .flex-raw{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+      }
+      
+      .box{
+        flex-basis: 25%;
+        
+        border: 2px solid black;
+        background-color: salmon;
+        padding: 40px;
+        text-align: center;
+        color:white;
+        font-size: 2.5em;
+      }
+      .double{
+        flex-basis:50%;
+      }
+      
+      
+      h1{
+        font:italic bold small-caps 50px "times new roman";
+        text-align: center;
+      }
+      
+      /* 
+      STYLE CSS WEB KALKULATOR
+      Sarful Ependi 5 Agust 2k21
+      */
+      
+      /* Perwarnaan Css*/
+      .display{
+        width: 100%;
+        color:salmon;
+        padding: 5px 20px;
+        background-color: #333;
+        border:1px solid black;
+        font-size: 3em;
+      }
+      .flex-container-column{
+        display: flex;
+        flex-direction: column;
+        
+        /*Proferti Pendukung (Tambahan)*/
+        max-width: 800px;
+        margin:0 auto;
+        text-align: right;
+      }
+      
+      .flex-container-row{
+        display: flex;
+      }
+      .button{
+        flex-basis:25%;
+        
+        /*Properti Pendukung(Tambahan)*/
+        font-size:2.5em;
+        text-align: center;
+        padding:40px;
+        border:1px solid black;
+        background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+        cursor: pointer;
+      }
+      .button:hover{
+        font-weight: bold;
+      }
+      
+      .double{
+        flex-basis:50%;
+      }
+      
+      .operator,
+      .negatif,
+      .equals{
+        background:lightskyblue;
+      }
+      
+      /*CSS card*/
+      .card{
+        box-shadow: 0 5px 8px rgba(0, 0,0,.2);
+        border-radius: 10px;
+        padding:30px;
+        margin-top:20px;
+      }
+      
+      /*media screen*/
+      @media screen and (max-width: 513px){
+        .button{
+          padding:10px;
+        }
+      }
+    </style>
+</head>
+<body>
+  <h1 style="text-align: center"><a href="Kalkulator.html">KALKULATOR</a></h1>
+  
+  <hr />
+  <div class="container">
+    <div class="flex-column">
+      <div class="flex-raw">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+      <div class="flex-raw">
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box double">7</div>
+      </div>
+    </div>
+  </div>
+  
+  <br />
+  <br />
+  <hr/>
+  <h1>Amelia Supriyatna</h1>
+  <!-- Struktur Kalkulator Web-->
+  <div class="flex-container-column card">
+    <div class="display">
+      <h2 id="displayNumber">0</h2>
+    </div><!-- display layar Kalkulator-->
+    <div class="flex-container-row">
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button negatif">+/-</div>
+    </div>
+    <div class="flex-container-row">
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button operator">-</div>
+    </div>
+    <div class="flex-container-row">
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button operator">+</div>
+    </div>
+    <div class="flex-container-row">
+      <div class="button clear">CE</div>
+      <div class="button">0</div>
+      <div class="button equals double">=</div>
+    </div>
+  </div>
+  <script>
+    console.log('Selamat anda Sekarang Masuk Ke Materi JavaScript');
+    
+    /*Statment(Perintah Sederhana)*/
+    alert('Terimakasih!!')
+    
+    /*Variabel dalam Js,*/
+    var firstName = 'Saeful',
+        lastName = 'Ependi';
+    console.log(firstName + ' ' + lastName);
+    let x = '10';
+    console.log(typeof(x));
+    
+    /* Aray (Menampukg beberapa Variabel)*/
+    let myAray = ['Saeful', 18, 32.5, true, 'Programing'];
+    console.log(myAray);
+    console.log(myAray[3]);
+    
+    /*Objek data*/
+    let user = {firstName :'saeful', lastName :'Ependi', umur:18, lulus: true, hobby:["Volleyball", 'futsal', 5]};
+    console.log('Halo Nama saya :' + user.firstName + 'Dan nama Belakang saya' + user.lastName + 'saya suka bermain ' + user.hobby[0] + 'dalam ' + user.hobby[2]);
+    
+    /*Obejek yang lebih spesifik*/
+    let User = {
+                name:{
+                  firstName: 'Amel',
+                  lastName: 'Supri',
+                },
+                warnaKesukaan:'Cokelat',
+                bajuKesukaan:'Bra',
+             };
+    console.log('OutputNya ' + User.name.firstName + ' ' + 'Dia suka dengan Warna ' + User.warnaKesukaan + ' ' + 'dan baju kesukaan ' + User.bajuKesukaan);
+    
+    /*Logika */
+    let a = 10,
+        b = 15;
+    
+    console.log(a > 8 && a < b ); // (true && true)
+    console.log(a > b); // hasilnya False (boleam)
+    
+    /*String Yang Komplek*/
+    let string = 'hello word! i\'m sundanese, are you okek';
+    console.log(string+ " " + string);
+    
+  </script>
+</body>
+
+</html>

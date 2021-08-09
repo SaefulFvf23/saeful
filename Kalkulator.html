@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <style>
+   .container{
+     /*display*/
+     display: flex;
+     
+     /* Proferty lain lain*/
+     width: 800px;
+     height: 250px;
+     background-color:#eaeaea;
+     border: 2px solid black;
+     padding: 20px;
+     border-radius: 10px;
+     margin: 0 auto;
+     /*Menjauh*/
+     margin-bottom:50px;
+   }
+   
+   .box{
+     
+     /*Proferty LainNya*/
+     background-color: salmon;
+     border: 2px solid red;
+     border-radius:15px;
+     margin:5px;
+     
+     /* Pemanis*/
+     text-align-last: center;
+    
+   }
+   .pertama{
+     flex-grow: 1;
+   }
+   .kedua{
+     flex-grow:2;
+   }
+   .ketiga{
+     flex-grow: 1;
+   }
+   
+   /* Css Flex-direction*/
+   .flex-direction{
+     display: flex;
+     flex-direction: column;
+     
+     
+     width: 800px;
+     height: 250px;
+     background: #eaeaea;
+     border:2px solid black;
+     border-radius: 15px;
+     margin:0 auto;
+     padding:20px;
+     
+     /* Menambahkan Margin Bottom*/
+     margin:0 0 0 50px;
+   }
+   .satu{
+     flex-grow: 1;
+   }
+   .dua{
+     flex-grow: 2;
+   }
+   .tiga{
+     flex-grow: 3;
+   }
+   
+   /* Css Flex-Column dan Flex-Raw*/
+   .flex-column{
+     /*Display*/
+     display: flex;
+     flex-direction: column;
+     /*________*/
+     width: 800px;
+     height:250px;
+     background-color:#eaeaea;
+     border: 2px solid red;
+     border-radius:15px;
+     margin: auto;
+     padding:15px;
+     
+     margin-top: 50px;
+   }
+   
+    .flex-raw{
+      display:flex;
+      flex-direction: row;
+      flex-grow: 1;
+      /*________*/
+      
+      background-color: yellow;
+      border:2px solid black;
+      border-radius:15px;
+      padding:10px;
+      margin:5px;
+     
+   }
+   
+   .submit{
+     display: block;
+     font-size: 30px;
+     text-align: center;
+   }
+   </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box pertama">Flex-Item</div>
+    <div class="box kedua">Flex-Item</div>
+    <div class="box kedua"></div>
+    <div class="box pertama"></div>
+  </div>
+  
+  
+  <!-- Flex-direction-->
+  <div class="flex-direction">
+    <div class="box satu">Box-satu</div>
+    <div class="box dua">Box-dua</div>
+    <div class="box tiga">Box-tiga</div>
+  </div>
+  
+  <!-- Flex-Column ysng didalamnya ada Flex-Raw-->
+  <div class="flex-column">
+    <div class=flex-raw>
+      <div class="box pertama"></div>
+      <div class="box kedua"></div>
+      <div class="box ketiga"></div>
+    </div>
+    <div class="flex-raw">
+      <div class="box pertama"></div>
+      <div class="box pertama"></div>
+      <div class="box ketiga"></div>
+    </div>
+  </div>
+  <div class="submit">
+    <br />
+   <p><a href="kalkulator1.html">kalkulator1</a></p>
+  </div>
+  
+  
+</body>
+</html>

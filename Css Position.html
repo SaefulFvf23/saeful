@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css Posisi</title>
+    <style>
+      body{
+        height: 900px;
+      }
+      .i{
+        width: 180px;
+        height: 300px;
+        border:4px solid black;
+        border-radius: 50px;
+        margin: 50px auto 0;
+        position: relative;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      
+      div{
+        width: 50px;
+        height: 50px;
+      }
+      
+      .kotak1{
+        background:red;
+        border-top-left-radius: 50px;
+      }
+      .kotak2{
+        background:yellow;
+        position: relative;
+        top:-50px;
+        left: 80px;
+      }
+      .kotak3{
+        background:green;
+        position: fixed;
+        width: 100%;
+        height: -10px;
+        top: 0;
+        left: 0;
+      }
+      
+      .kotak4{
+        background: salmon;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        
+      }
+      .kotak4 .con{
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 15px;
+        color: white;
+      }
+      
+    </style>
+   
+    
+</head>
+
+<body>
+  <div class="i">
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+    <div class="kotak3"></div>
+    <div class="kotak4"><p class="con">Copyright</p></div>
+  </div>
+
+</body>
+
+</html>
